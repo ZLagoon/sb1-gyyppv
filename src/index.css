@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  background-color: #f6f8fa;
+  color: #24292f;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md font-medium text-sm shadow-sm transition-all duration-200 ease-in-out;
+}
+
+.btn-primary {
+  @apply bg-[#2da44e] text-white hover:bg-[#2c974b];
+}
+
+.btn-secondary {
+  @apply bg-[#f6f8fa] text-[#24292f] border border-[#d0d7de] hover:bg-[#f3f4f6];
+}
+
+.btn-info {
+  @apply bg-[#0969da] text-white hover:bg-[#0860c9];
+}
+
+.chart-container {
+  @apply bg-white p-6 rounded-lg shadow-sm border border-[#d0d7de] transition-all duration-300 ease-in-out cursor-pointer hover:shadow-md;
+}
+
+.chart-title {
+  @apply text-xl font-semibold mb-4 text-[#24292f];
+}
+
+.react-grid-item {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.react-resizable-handle {
+  @apply bg-[#0969da];
+}
